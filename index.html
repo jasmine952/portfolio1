@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+		<div class="hero-header">
+			<div class="wrapper">
+				<header>
+					<div class="logo">
+						<i class="fa-solid fa-a"></i>
+						<div class="logo-text">Alamoh Temiloluwa Abraham</div>
+					</div>
+					<nav>
+						<div class="togglebtn">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+
+						</div>
+						<ul class="navlinks">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">Resume</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="https://wa.me/qr/I5WGBJKNMKXKA1">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
+				<div class="container">
+					<div class="hero-pic">
+						<img src="pic1.png" alt="Profile pic">
+					</div>
+					<div class="hero-text">
+						<h5>Hi i'm <span class="input">Frontend Developer</span></h5>
+						<h1>Alamoh Temiloluwa Abraham</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+					<div class="group-btn">
+						<a href="#" class="btn active">Download Cv</a>
+						<a href="https://wa.me/qr/I5WGBJKNMKXKA1" class="btn">Contact</a>
+					</div>
+						<div class="social">
+							<a href="https://web.facebook.com/abrahamjasmine05"><i class="fa-brands fa-facebook"></i></a>
+							<a href="https://www.linkedin.com/in/temiloluwa-alamoh-52100a1ba/"><i class="fa-brands fa-linkedin"></i></a>
+							<a href="https://instagram.com/abrahamjasmine05"><i class="fa-brands fa-instagram"></i></a>
+							<a href="https://github.com/jasmine952"><i class="fa-brands fa-github"></i></a>
+							<a href="https://wa.me/qr/I5WGBJKNMKXKA1"><i class="fa-brands fa-whatsapp"></i></a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Javascrip Typed for typing text -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+		<script>
+			/* Creating button click hide and show navbar*/
+
+			var togglebtn=document.querySelector(".togglebtn");
+			var	nav=document.querySelector(".navlinks");
+			var links=document.querySelector(".navlinks li");
+
+			togglebtn.addEventListener("click", function(){
+				this.classList.toggle("click");
+				nav.classList.toggle("open");
+			})
+
+			var typed=new Typed(".input", {
+				strings:["Frontend Developer", "Graphics Designer", "Web Developer"],
+				typedSpeed:70, 
+				backSpeed:55,
+				loop:true
+			});
+		</script>
+</body>
+</html>
