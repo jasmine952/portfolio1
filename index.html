@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<script>
+  document.querySelectorAll(".slider").forEach(slider => {
+    const images = slider.querySelectorAll("img");
+    let index = 0;
+
+    const showImage = (i) => {
+      images.forEach(img => img.classList.remove("active"));
+      images[i].classList.add("active");
+    };
+
+    slider.querySelector(".next").addEventListener("click", () => {
+      index = (index + 1) % images.length;
+      showImage(index);
+    });
+
+    slider.querySelector(".prev").addEventListener("click", () => {
+      index = (index - 1 + images.length) % images.length;
+      showImage(index);
+    });
+  });
+</script>
+
+		<div class="hero-header">
+			<div class="wrapper">
+				<header>
+					<div class="logo">
+						<i class="fa-solid fa-a"></i>
+						<div class="logo-text">Alamoh Temiloluwa Abraham</div>
+					</div>
+					<nav>
+						<div class="togglebtn">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+
+						</div>
+						<ul class="navlinks">
+							<li><a href="#">Home</a></li>
+							<li><a href="portfolio.html">Portfolio</a></li>
+							<li><a href="https://github.com/jasmine952/portfolio1/blob/main/CV_ALAMOH%20TEMILOLUWA%20ABRAHAM.pdf">Resume</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="https://wa.me/qr/I5WGBJKNMKXKA1">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
+				<div class="container">
+					<div class="hero-pic">
+						<img src="pic2.png" alt="Profile pic">
+					</div>
+					<div class="hero-text">
+						<h5>Hi i'm a<span class="input">Frontend Developer</span></h5>
+						<h1>Alamoh Temiloluwa Abraham</h1>
+						<p>Computer Science graduate with proven experience delivering reliable, high-quality software projects. Skilled 							in web development and IT support, with hands-on expertise in PHP, Python, JavaScript, Node.js, HTML, and CSS. 							Experienced in leading software initiatives, improving e-commerce platforms, providing remote administrative 							and customer support. Seeking an opportunity with a reputable organization to contribute strong technical 								skills, dependable service, and effective problem-solving in web development, administrative support, customer 							service, and IT operations.
+					</p>
+					<div class="group-btn">
+						<a href="https://github.com/jasmine952/portfolio1/blob/main/CV_ALAMOH%20TEMILOLUWA%20ABRAHAM.pdf" class="btn active">Download Cv</a>
+						<a href="https://wa.me/qr/I5WGBJKNMKXKA1" class="btn">Contact</a>
+					</div>
+						<div class="social">
+							<a href="#"><i class="fa-brands fa-facebook"></i></a>
+							<a href="https://www.linkedin.com/in/temiloluwa-alamoh-52100a1ba/"><i class="fa-brands fa-linkedin"></i></a>
+							<a href="#"><i class="fa-brands fa-instagram"></i></a>
+							<a href="https://github.com/jasmine952"><i class="fa-brands fa-github"></i></a>
+							<a href="https://wa.me/qr/I5WGBJKNMKXKA1"><i class="fa-brands fa-whatsapp"></i></a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Javascrip Typed for typing text -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+		<script>
+			/* Creating button click hide and show navbar*/
+
+			var togglebtn=document.querySelector(".togglebtn");
+			var	nav=document.querySelector(".navlinks");
+			var links=document.querySelector(".navlinks li");
+
+			togglebtn.addEventListener("click", function(){
+				this.classList.toggle("click");
+				nav.classList.toggle("open");
+			})
+
+			var typed=new Typed(".input", {
+				strings:["Frontend Developer", "Graphics Designer", "Web Developer"],
+				typedSpeed:70, 
+				backSpeed:55,
+				loop:true
+			});
+		</script>
+</body>
+</html>
+
+
+
+

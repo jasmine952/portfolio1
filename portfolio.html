@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Projects</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+<div class="hero-header">
+	<div class="wrapper">
+
+		<header>
+			<div class="logo">
+				<i class="fa-solid fa-a"></i>
+				<div class="logo-text">Alamoh Temiloluwa Abraham</div>
+			</div>
+			<nav>
+				<div class="togglebtn">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<ul class="navlinks">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="https://github.com/jasmine952/portfolio1/blob/main/CV_ALAMOH%20TEMILOLUWA%20ABRAHAM.pdf">Resume</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="https://wa.me/qr/I5WGBJKNMKXKA1">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		
+		<div class="container">
+			<div class="hero-pic">
+				<img src="pic2.png" alt="Project Image">
+			</div>
+
+			<div class="hero-text">
+				<div class="projects-section">
+  <h1 class="section-title">My Projects</h1>
+
+  <div class="projects-grid">
+
+    <!-- Project Card 1 -->
+    <div class="project-card">
+      <img src="project1.png" alt="Portfolio Website">
+      <div class="project-content">
+        <h3>Inaugual Lecture</h3>
+        <p>Responsive personal portfolio built with HTML, CSS, and JavaScript.</p>
+        <div class="project-links">
+          <a href="https://github.com/jasmine952/Inauguralschedule" target="_blank">GitHub</a>
+          <a href="#" target="_blank">Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Card 2 -->
+    <div class="project-card">
+      <img src="project2.png" alt="TO DO LIST">
+      <div class="project-content">
+        <h3>To Do List</h3>
+        <p>Create a todo list that will be saved even if you exist your browser, using Html, css and javascript.</p>
+        <div class="project-links">
+          <a href="https://github.com/jasmine952/Todo_list" target="_blank">GitHub</a>
+          <a href="https://jasmine952.github.io/Todo_list/" target="_blank">Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Card 3 -->
+    <div class="project-card">
+      <img src="project3.png" alt="Dashboard Page">
+      <div class="project-content">
+        <h3>Simple Dashboard Page</h3>
+        <p>A template of how a dashboard should look like design with HTML & CSS.</p>
+        <div class="project-links">
+          <a href="https://github.com/jasmine952/dashboard" target="_blank">GitHub</a>
+          <a href="https://jasmine952.github.io/dashboard/" target="_blank">Live Demo</a>
+        </div>
+      </div>
+    </div>
+		<p>
+			Kindly visit My GitHub page for more project.
+  </div>
+</div>
+				<div class="group-btn">
+					<a href="https://github.com/jasmine952" class="btn active" target="_blank">
+						View on GitHub
+					</a>
+					<a href="index.html" class="btn">
+						Back to Home
+					</a>
+				</div>
+
+				<div class="social">
+					<a href="https://github.com/jasmine952"><i class="fa-brands fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/temiloluwa-alamoh-2762513a2/"><i class="fa-brands fa-linkedin"></i></a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+<script>
+	var togglebtn = document.querySelector(".togglebtn");
+	var nav = document.querySelector(".navlinks");
+
+	togglebtn.addEventListener("click", function () {
+		this.classList.toggle("click");
+		nav.classList.toggle("open");
+	});
+</script>
+
+</body>
+</html>
